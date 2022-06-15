@@ -29,11 +29,6 @@ const electronicsSetup = [
   ['ECU map', (s) => [displayItem(s && s.basicSetup.electronics.eCUMap + 1)]]
 ];
 
-function getWheelRate(val, idx, car) {
-  const rates = car.wheelRates[idx % 2];
-  return rates[val];
-}
-
 const mechanicalSetup = [
   ['Antiroll bar', (s) => [
     displayItem(s?.advancedSetup.mechanicalBalance.aRBFront),
