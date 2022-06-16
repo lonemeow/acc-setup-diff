@@ -322,7 +322,7 @@ const data = {
         rideHeightMinFront: 55,
         rideHeightMinRear: 55
     },
-    porsche_911_gt3_r: {
+    porsche_991_gt3_r: {
         name: 'Porsche 911 GT3 R',
         tirePressureMin: 20.3,
         casterFunc: (v) => v * 0.1 + 7.3,
@@ -336,7 +336,7 @@ const data = {
         rideHeightMinFront: 60,
         rideHeightMinRear: 60
     },
-    porsche_911ii_gt3_r: {
+    porsche_991ii_gt3_r: {
         name: 'Porsche 911II GT3 R',
         tirePressureMin: 20.3,
         casterFunc: (v) => v * 0.2 + 4.4,
