@@ -136,14 +136,26 @@ function App() {
   const leftCar = CarData[left?.carName];
   const rightCar = CarData[right?.carName];
 
+  var body;
+
   if (left && !leftCar) {
-    return (
-      <UnsupportedCar model={left.carName} />
-    );
+    body = <tbody>
+      <tr><td colSpan="3"><UnsupportedCar model={left.carName} /></td></tr>
+    </tbody>;
   } else if (right && !rightCar) {
-    return (
-      <UnsupportedCar model={right.carName} />
-    );
+    body = <tbody>
+      <tr><td colSpan="3"><UnsupportedCar model={right.carName} /></td></tr>
+    </tbody>;
+  } else {
+    body = <>
+      <tbody>
+        <DiffRow desc="Car model"
+          left={[displayItem(leftCar?.name, leftCar?.name)]}
+          right={[displayItem(rightCar?.name, rightCar?.name)]} />
+      </tbody>
+      {setupGroups.map(([title, items]) =>
+        <DiffSection key={title} title={title} setupItems={items} leftCar={leftCar} left={left} rightCar={rightCar} right={right} />)}
+    </>;
   }
 
   return (
@@ -160,13 +172,7 @@ function App() {
             </td>
           </tr>
         </thead>
-        <tbody>
-          <DiffRow desc="Car model"
-            left={[displayItem(leftCar?.name, leftCar?.name)]}
-            right={[displayItem(rightCar?.name, rightCar?.name)]} />
-        </tbody>
-        {setupGroups.map(([title, items]) =>
-          <DiffSection key={title} title={title} setupItems={items} leftCar={leftCar} left={left} rightCar={rightCar} right={right} />)}
+        {body}
       </Table>
     </Container>
   );
