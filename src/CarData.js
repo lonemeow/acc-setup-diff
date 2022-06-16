@@ -72,6 +72,7 @@ const data = {
     },
     bentley_continental_gt3_2016: {
         name: 'Bentley Continental GT3 2016',
+        tirePressureMin: 20.3,
         casterFunc: (v) => v * 0.24 + 8.3,
         toeMins: [-0.4, -0.4],
         wheelRates: [
@@ -85,6 +86,7 @@ const data = {
     },
     bentley_continental_gt3_2018: {
         name: 'Bentley Continental GT3 2018',
+        tirePressureMin: 20.3,
         casterFunc: (v) => v * 0.24 + 8.3,
         toeMins: [-0.4, -0.4],
         wheelRates: [
