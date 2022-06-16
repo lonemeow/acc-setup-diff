@@ -239,7 +239,7 @@ const data = {
     mclaren_650s_gt3: {
         name: 'McLaren 650S GT3',
         tirePressureMin: 20.3,
-        casterFunc: (v) => v * x,
+        casterFunc: (v) => v * 0.24 + 5.3,
         toeMins: [-0.4, -0.4],
         wheelRates: [
             [126, 136, 146, 156, 166, 176],
@@ -361,7 +361,7 @@ const data = {
         brakeBiasMin: 50,
         rideHeightMinFront: 54,
         rideHeightMinRear: 54
-    }
+    },
 
 
     // GT4
