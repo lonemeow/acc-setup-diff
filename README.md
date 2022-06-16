@@ -1,10 +1,18 @@
-# Getting Started with Create React App
+# Assetto Corsa Competizione car setup diff tool
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a tool for comparing car setups for Assetto Corsa Competizione and easily seeing the differences.
 
-## Available Scripts
+## FAQ
 
-In the project directory, you can run:
+### Can someone else see the setups I am comparing? Is the data sent somewhere?
+
+**No, the data stays on your computer.** The comparison runs entirely in your browser, no data is sent to any external server.
+
+### How do I report bugs or make suggestions for improvement?
+
+Please file a GitHub issue.
+
+## Local development
 
 ### `yarn start`
 
