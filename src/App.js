@@ -1,6 +1,7 @@
 import Table from 'react-bootstrap/Table';
 import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
+import Alert from 'react-bootstrap/Alert';
 import { useState } from 'react';
 import CarData from './CarData';
 
@@ -120,12 +121,30 @@ function DiffSection(props) {
   )
 }
 
+function UnsupportedCar(props) {
+  return (
+    <Alert variant="danger">
+      Unsupported car: {props.model}
+    </Alert>
+  );
+}
+
 function App() {
   const [left, setLeft] = useState(undefined);
   const [right, setRight] = useState(undefined);
 
   const leftCar = CarData[left?.carName];
   const rightCar = CarData[right?.carName];
+
+  if (left && !leftCar) {
+    return (
+      <UnsupportedCar model={left.carName} />
+    );
+  } else if (right && !rightCar) {
+    return (
+      <UnsupportedCar model={right.carName} />
+    );
+  }
 
   return (
     <Container>
