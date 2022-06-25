@@ -57,8 +57,8 @@ const aeroSetup = [
     displayItem(s && s.advancedSetup.aeroBalance.rideHeight[2] + c.rideHeightMinRear)
   ]],
   ['Brake ducts', (s) => s?.advancedSetup.aeroBalance.brakeDuct.map((v) => displayItem(v))],
-  ['Splitter', (s) => [displayItem(s?.advancedSetup.aeroBalance.splitter)]],
-  ['Wing', (s) => [displayItem(s?.advancedSetup.aeroBalance.rearWing)]]
+  ['Splitter', (s) => [displayItem(s && s.advancedSetup.aeroBalance.splitter +1)]],
+  ['Wing', (s) => [displayItem(s && s.advancedSetup.aeroBalance.rearWing +1)]]
 ];
 
 const setupGroups = [
