@@ -2,6 +2,8 @@
 
 This is a tool for comparing car setups for Assetto Corsa Competizione and easily seeing the differences.
 
+If you just want to use the tool, head over to https://lonemeow.github.io/acc-setup-diff/
+
 ## FAQ
 
 ### Can someone else see the setups I am comparing? Is the data sent somewhere?
