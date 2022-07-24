@@ -367,6 +367,62 @@ const data = {
 
 
     // GT4
+    alpine_a110_gt4: {
+        name: 'Alpine A110 GT4',
+        tirePressureMin: 17,
+        casterFunc: (v) => v * (13.7 - 7.3) / 34 + 7.3,
+        toeMins: [-0.4, -0.4],
+        wheelRates: [
+            [62.5, 72.5, 82.5, 92.5],
+            [73.3, 83.3, 93.3, 103.3]
+        ],
+        steeringRatioMin: 12,
+        brakeBiasMin: 45,
+        rideHeightMinFront: 95,
+        rideHeightMinRear: 85
+    },
+    amr_v8_vantage_gt4: {
+        name: 'AMR V8 Vantage GT4',
+        tirePressureMin: 17,
+        casterFunc: (v) => v * 0.18 + 10.7,
+        toeMins: [-0.4, -0.4],
+        wheelRates: [
+            [80, 90, 100, 110],
+            [70, 75, 80]
+        ],
+        steeringRatioMin: 14,
+        brakeBiasMin: 45,
+        rideHeightMinFront: 98,
+        rideHeightMinRear: 102
+    },
+    audi_r8_gt4: {
+        name: 'Audi R8 LMS GT4',
+        tirePressureMin: 17,
+        casterFunc: (v) => v * (13.3 - 6.6) / 34 + 6.6,
+        toeMins: [-0.4, -0.4],
+        wheelRates: [
+            [142, 160],
+            [146, 163]
+        ],
+        steeringRatioMin: 14,
+        brakeBiasMin: 50,
+        rideHeightMinFront: 105,
+        rideHeightMinRear: 107
+    },
+    bmw_m4_gt4: {
+        name: 'BMW M4 GT4',
+        tirePressureMin: 17,
+        casterFunc: (v) => 8.4,
+        toeMins: [-0.2, 0.0],
+        wheelRates: [
+            [165.888, 184.320, 202.752],
+            [103.335, 117.113, 130.891]
+        ],
+        steeringRatioMin: 10,
+        brakeBiasMin: 49,
+        rideHeightMinFront: 80,
+        rideHeightMinRear: 75
+    },
     chevrolet_camaro_gt4r: {
         name: 'Chevrolet Camaro GT4.R',
         tirePressureMin: 17,
@@ -380,6 +436,90 @@ const data = {
         brakeBiasMin: 47,
         rideHeightMinFront: 115,
         rideHeightMinRear: 123
+    },
+    ginetta_g55_gt4: {
+        name: 'Ginetta G55 GT4',
+        tirePressureMin: 17,
+        casterFunc: (v) => v * 0.2625 + 3.7,
+        toeMins: [-0.4, -0.4],
+        wheelRates: [
+            [80, 90, 100, 110, 120],
+            [60, 70, 80, 90, 100]
+        ],
+        steeringRatioMin: 11,
+        brakeBiasMin: 46,
+        rideHeightMinFront: 75,
+        rideHeightMinRear: 76
+    },
+    ktm_xbow_gt4: {
+        name: 'KTM X-Bow GT4',
+        tirePressureMin: 17,
+        casterFunc: (v) => v * 0.1925 + 1.7,
+        toeMins: [-0.4, -0.4],
+        wheelRates: [
+            [87, 97, 107, 117, 127],
+            [81, 91, 101, 111, 121, 131]
+        ],
+        steeringRatioMin: 11,
+        brakeBiasMin: 44,
+        rideHeightMinFront: 110,
+        rideHeightMinRear: 110
+    },
+    maserati_mc_gt4: {
+        name: 'Maserati GranTurismo MC GT4',
+        tirePressureMin: 17,
+        casterFunc: (v) => v * 0.22 + 3.4,
+        toeMins: [-0.4, -0.4],
+        wheelRates: [
+            [116, 151, 186],
+            [113, 138, 163]
+        ],
+        steeringRatioMin: 14,
+        brakeBiasMin: 49,
+        rideHeightMinFront: 80,
+        rideHeightMinRear: 105
+    },
+    mclaren_570s_gt4: {
+        name: 'McLaren 570S GT4',
+        tirePressureMin: 17,
+        casterFunc: (v) => v * 0.245 + 5.3,
+        toeMins: [-0.4, -0.4],
+        wheelRates: [
+            [140, 175],
+            [162.85, 175.52]
+        ],
+        steeringRatioMin: 11,
+        brakeBiasMin: 60,
+        rideHeightMinFront: 95,
+        rideHeightMinRear: 95
+    },
+    mercedes_amg_gt4: {
+        name: 'Mercedes-AMG GT4',
+        tirePressureMin: 17,
+        casterFunc: (v) => v * 0.18 + 9.2,
+        toeMins: [-0.2, 0.0],
+        wheelRates: [
+            [78, 88, 104],
+            [66]
+        ],
+        steeringRatioMin: 10,
+        brakeBiasMin: 51,
+        rideHeightMinFront: 103,
+        rideHeightMinRear: 101
+    },
+    porsche_718_cayman_gt4_mr: {
+        name: 'Porsche 718 Cayman GT4 Clubsport',
+        tirePressureMin: 17,
+        casterFunc: (v) => v * (10.2 - 7.3) / 28 + 7.3,
+        toeMins: [-0.4, -0.4],
+        wheelRates: [
+            [99, 108, 116, 124],
+            [91, 99, 108, 116, 124]
+        ],
+        steeringRatioMin: 15,
+        brakeBiasMin: 45,
+        rideHeightMinFront: 106,
+        rideHeightMinRear: 94
     },
 
 
