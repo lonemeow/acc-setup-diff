@@ -538,6 +538,34 @@ const data = {
         rideHeightMinFront: 59,
         rideHeightMinRear: 103
     },
+    porsche_991ii_gt3_cup: {
+        name: 'Porsche 991II GT3 Cup',
+        tirePressureMin: 20.3,
+        casterFunc: (v) => (v) * 0.1 + 7.3,
+        toeMins: [-0.4, -0.4],
+        wheelRates: [
+            [0, 1, 2, 3],
+            [0, 1, 2, 3]
+        ],
+        steeringRatioMin: 11,
+        brakeBiasMin: 50,
+        rideHeightMinFront: 60,
+        rideHeightMinRear: 80
+    },
+    porsche_992_gt3_cup: {
+        name: 'Porsche 992 GT3 Cup',
+        tirePressureMin: 20.3,
+        casterFunc: (v) => 14.8,
+        toeMins: [-0.4, -0.4],
+        wheelRates: [
+            [1],
+            [1]
+        ],
+        steeringRatioMin: 11,
+        brakeBiasMin: 50,
+        rideHeightMinFront: 72,
+        rideHeightMinRear: 106
+    },
 
 
     // TCX
