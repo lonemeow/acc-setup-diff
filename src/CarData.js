@@ -538,6 +538,20 @@ const data = {
         rideHeightMinFront: 59,
         rideHeightMinRear: 103
     },
+    lamborghini_huracan_st_evo2: {
+        name: 'Lamborghini Huracan ST EVO2',
+        tirePressureMin: 20.3,
+        casterFunc: (v) => (v) * (17.4 - 10.7) / 34 + 10.7,
+        toeMins: [-0.4, -0.4],
+        wheelRates: [
+            [121, 144, 167, 190, 201, 212],
+            [117, 136, 154, 164, 173, 191]
+        ],
+        steeringRatioMin: 10,
+        brakeBiasMin: 50,
+        rideHeightMinFront: 54,
+        rideHeightMinRear: 54
+    },
     porsche_991ii_gt3_cup: {
         name: 'Porsche 991II GT3 Cup',
         tirePressureMin: 20.3,
