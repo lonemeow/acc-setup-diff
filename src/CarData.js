@@ -126,6 +126,20 @@ const data = {
         rideHeightMinFront: 52,
         rideHeightMinRear: 52
     },
+    ferrari_296_gt3: {
+        name: 'Ferrari 296 GT3',
+        tirePressureMin: 20.3,
+        casterFunc: (v) => v * (13.8 - 8.5) / 30 + 8.5,
+        toeMins: [-0.4, -0.4],
+        wheelRates: [
+            [163.769, 170.068, 176.367, 182.666, 188.964, 195.263, 201.562, 207.861, 214.160],
+            [122.091, 129.273, 136.455, 143.637, 150.818, 158.000, 165.182, 172.364, 179.546]
+        ],
+        steeringRatioMin: 13,
+        brakeBiasMin: 50,
+        rideHeightMinFront: 50,
+        rideHeightMinRear: 50
+    },
     ferrari_488_gt3: {
         name: 'Ferrari 488 GT3',
         tirePressureMin: 20.3,
@@ -212,6 +226,20 @@ const data = {
     },
     lamborghini_huracan_gt3_evo: {
         name: 'Lamborghini Huracán GT3 Evo',
+        tirePressureMin: 20.3,
+        casterFunc: (v) => v * (15 - 6.2) / 34 + 6.2,
+        toeMins: [-0.4, -0.4],
+        wheelRates: [
+            [121, 144, 167, 190, 201, 212],
+            [117, 136, 154, 164, 173, 191]
+        ],
+        steeringRatioMin: 10,
+        brakeBiasMin: 50,
+        rideHeightMinFront: 54,
+        rideHeightMinRear: 54
+    },
+    lamborghini_huracan_gt3_evo2: {
+        name: 'Lamborghini Huracán GT3 EVO2',
         tirePressureMin: 20.3,
         casterFunc: (v) => v * (15 - 6.2) / 34 + 6.2,
         toeMins: [-0.4, -0.4],
@@ -340,6 +368,20 @@ const data = {
         name: 'Porsche 991II GT3 R',
         tirePressureMin: 20.3,
         casterFunc: (v) => v * 0.2 + 4.4,
+        toeMins: [-0.4, -0.4],
+        wheelRates: [
+            [100.5, 110, 114, 119, 127, 137, 141.5, 146, 155, 173.5],
+            [137, 149.5, 156, 162, 174.5, 187, 193, 199.5, 212, 237]
+        ],
+        steeringRatioMin: 11,
+        brakeBiasMin: 43,
+        rideHeightMinFront: 53,
+        rideHeightMinRear: 55
+    },
+    porsche_992_gt3_r: {
+        name: 'Porsche 992 GT3 R',
+        tirePressureMin: 20.3,
+        casterFunc: (v) => v * (12.4 - 6.5) / 30 + 6.5,
         toeMins: [-0.4, -0.4],
         wheelRates: [
             [100.5, 110, 114, 119, 127, 137, 141.5, 146, 155, 173.5],
