@@ -294,6 +294,20 @@ const data = {
         rideHeightMinFront: 50,
         rideHeightMinRear: 64
     },
+    mclaren_720s_gt3_evo: {
+        name: 'McLaren 720S GT3 Evo',
+        tirePressureMin: 20.3,
+        casterFunc: (v) => v * (16.3 - 5.3) / 46 + 5.3,
+        toeMins: [-0.48, -0.1],
+        wheelRates: [
+            [118, 134, 150, 166, 182, 198, 214, 230],
+            [83, 97, 111, 125, 139, 153, 167, 181, 195, 209]
+        ],
+        steeringRatioMin: 11,
+        brakeBiasMin: 47,
+        rideHeightMinFront: 50,
+        rideHeightMinRear: 64
+    },
     mercedes_amg_gt3: {
         name: 'Mercedes-AMG GT3',
         tirePressureMin: 20.3,
